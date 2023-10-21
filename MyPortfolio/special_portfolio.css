@@ -1,0 +1,310 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #03033b;
+  color: white;
+  font-size: 20px;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  height: 100px;
+  align-items: center;
+  background-color: rgb(5, 5, 96);
+  margin-top: 25px;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  margin: 0px 20px;
+  list-style: none;
+}
+.left {
+  font-size: 2rem;
+}
+.firstSection {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 3%;
+  flex-wrap: wrap;
+}
+.sectionLeft {
+  width: 33%;
+  font-size: 3rem;
+  /* background-color: red; */
+  /* text-align: center; */
+}
+.sectionRight {
+  width: 30%;
+  /* margin-top: 5%; */
+  /* text-align: center; */
+  /* background-color: red; */
+}
+.sectionRight img {
+  width: 300px;
+  margin: 0px 10px;
+}
+.purple {
+  color: rgb(189, 189, 246);
+}
+nav ul a {
+  text-decoration: none;
+  color: white;
+}
+nav ul a:hover {
+  color: rgb(138, 138, 239);
+}
+#element {
+  color: rgb(189, 189, 246);
+}
+.secondsection {
+  width: 80vw;
+  font-size: 25px;
+  margin: auto;
+  height: 40vw;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+main hr {
+  height: 1px;
+  border: 0px;
+  background-color: blue;
+  margin: 71px 77px 20px 77px;
+}
+.text-gray {
+  color: gray;
+  font-size: 17px;
+}
+main h2 {
+  color: white;
+  font-size: 33px;
+}
+.secondsection .box {
+  width: 80vw;
+  margin: 56px 0px;
+  background-color: white;
+  height: 2px;
+  display: flex;
+}
+.secondsection .vertical {
+  height: 100px;
+  width: 53px;
+  margin: 0px 7vw;
+  background-color: white;
+}
+.top_image {
+  width: 27px;
+  position: relative;
+  top: -33px;
+  left: -12px;
+}
+
+.first_title {
+  position: relative;
+  top: 70px;
+  /* width: 104px; */
+  left: -2px;
+}
+
+.first_desc {
+  font-size: 10px;
+  position: relative;
+  top: 80px;
+  width: 134px;
+  color: gray;
+}
+.btn a{
+  text-decoration: none;
+  color: white;
+}
+/* Project Section Styles */
+.projects-section {
+  margin: 20px;
+  text-align: center;
+  height: 500px;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #03033b;
+  margin-bottom: 20px;
+}
+/* Project Cell Styles */
+.project-cell {
+  display: inline-grid;
+  width: 250px;
+  margin: 10px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0); /* Initial transparent box shadow */
+  transition: box-shadow 0.3s;
+}
+
+.project-cell:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* More pronounced box shadow on hover */
+}
+
+
+/* Rest of the styles (img, h3, p, and project-link) remain the same */
+
+
+img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.project-details {
+  margin-top: 10px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #03033b;
+}
+
+p {
+  font-size: 1rem;
+  color: #333;
+  margin-top: 10px;
+}
+
+/* Project Link Styles */
+.project-link {
+  display: none;
+  font-size: 1rem;
+  color: #03033b;
+  text-decoration: none;
+  margin-top: 10px;
+  color: blue;
+}
+
+.project-cell:hover .project-link {
+  display: block;
+}.thumbnail{
+  width: 100px;
+  height: 100px;
+}
+.myprojects{
+  text-align: left;
+}
+footer {
+  background-color:black; /* Black background color for the footer */
+  color: #fff; /* White text color for the footer */
+  height: 20vh;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 20px;
+  font: white;
+
+}
+
+/* Style for footer navigation links */
+.footer-nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+.footer-nav ul li a{
+  text-decoration: none;
+  color:white;
+}
+
+/* Style for footer navigation links on hover */
+.footer-nav a:hover {
+  color: #FFD700; /* Yellow text color on hover */
+}
+.social-icons{
+  padding-top: 30px;
+}
+
+/* Style for social media icons */
+.social-icons a {
+  margin: 0 10px; /* Add spacing between icons */
+  text-decoration: none;
+}
+
+/* Style for social media icons images (adjust width/height as needed) */
+.social-icons img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+
+}
+.copy{
+  color: white;
+  font-size: 18px;
+}
+.buttons .btn {
+  background-color: rgb(5 5 128);
+  color: white;
+  border: 2px solid white;
+  font-size: 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.sectionLeft .buttons {
+  padding: 12px 0px;
+}
+@media screen and (max-width: 1200px) {
+  body {
+    min-width: fit-content;
+  }
+  .firstSection {
+    flex-direction: column-reverse;
+  }
+  .secondsection .box {
+    flex-direction: column;
+    width: 50vw;
+  }
+  .vertical-title,
+  .vertical-desc {
+    left: 45px;
+  }
+
+  .first_desc {
+    position: relative;
+    left: 20px;
+  }
+  .first_title {
+    position: relative;
+    left: 20px;
+  }
+  .secondsection .vertical {
+    height: unset;
+  }
+
+
+  nav {
+    flex-direction: column;
+  }
+  .sectionLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+  }
+  .secondsection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200vh;
+  }.sectionRight{
+    display: flex;
+    justify-content: center;
+  }.sectionRight img {
+    width: 45vw;
+    margin-bottom: 30px;
+  }
+  .top_image{
+    top: 110px;
+  }
+}
