@@ -91,12 +91,12 @@ main h2 {
 }
 .secondsection .vertical {
   height: 100px;
-  width: 53px;
+  width: 1px;
   margin: 0px 7vw;
   background-color: white;
 }
 .top_image {
-  width: 27px;
+  width: 30px;
   position: relative;
   top: -33px;
   left: -12px;
