@@ -124,7 +124,6 @@ main h2 {
 .projects-section {
   margin: 20px;
   text-align: center;
-  height: 500px;
 }
 
 h2 {
@@ -136,8 +135,8 @@ h2 {
 .project-cell {
   display: inline-grid;
   width: 250px;
-  margin: 10px;
-  padding: 20px;
+  margin: 40px;
+  padding: 35px;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0); /* Initial transparent box shadow */
@@ -160,6 +159,9 @@ img {
 .project-details {
   margin-top: 10px;
 }
+.project-details p{
+  padding-bottom: 10px;
+}
 
 h3 {
   font-size: 1.5rem;
@@ -174,7 +176,6 @@ p {
 
 /* Project Link Styles */
 .project-link {
-  display: none;
   font-size: 1rem;
   color: #03033b;
   text-decoration: none;
@@ -182,9 +183,7 @@ p {
   color: blue;
 }
 
-.project-cell:hover .project-link {
-  display: block;
-}.thumbnail{
+.thumbnail{
   width: 100px;
   height: 100px;
 }
