@@ -48,7 +48,7 @@
 
 /* Style for the submit button */
 button[type="submit"] {
-    background-color: #337DFF;
+    background-color: #337dff;
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -58,7 +58,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #0055CC;
+    background-color: #0055cc;
 }
 
 /* Style for the embedded map */
@@ -71,55 +71,56 @@ button[type="submit"]:hover {
     height: 400px; /* Adjust the map's height as needed */
     border: none;
 }
+
 footer {
-    background-color:black; /* Black background color for the footer */
-    color: #fff; /* White text color for the footer */
-    height: 25vh;
-    padding: 20px 0;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-nav {
     font-size: 20px;
-    font: white;
-  
-  }
-  
-  /* Style for footer navigation links */
-  .footer-nav ul {
+}
+.footer-nav ul {
     list-style-type: none;
     padding: 0;
-  }
-  
-  .footer-nav ul li {
+}
+
+.footer-nav ul li {
     display: inline;
     margin-right: 20px;
-  }
-  .footer-nav ul li a{
+}
+.footer-nav ul li a {
     text-decoration: none;
-    color:white;
-  }
-  
-  /* Style for footer navigation links on hover */
-  .footer-nav a:hover {
-    color: #FFD700; /* Yellow text color on hover */
-  }
-  .social-icons{
-    padding-top: 30px;
-  }
-  
-  /* Style for social media icons */
-  .social-icons a {
+    color: black;
+}
+
+/* Style for footer navigation links on hover */
+.footer-nav a:hover {
+    color: #ffd700; /* Yellow text color on hover */
+}
+.social-icons {
+    padding-top: 20px;
+}
+
+/* Style for social media icons */
+.social-icons a {
     margin: 0 10px; /* Add spacing between icons */
     text-decoration: none;
-  }
-  
-  /* Style for social media icons images (adjust width/height as needed) */
-  .social-icons img {
+}
+
+/* Style for social media icons images (adjust width/height as needed) */
+.social-icons img {
     width: 24px;
     height: 24px;
     vertical-align: middle;
-  
-  }
-  .copy{
-    color: white;
+    filter: invert(1);
+}
+.copy {
+    color: black;
     font-size: 18px;
-  }
-  
+}
+.siteurl {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 0 ;
+}
