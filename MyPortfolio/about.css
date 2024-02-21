@@ -7,8 +7,9 @@
 
 /* Set the background color */
 body {
-  background-color: white;
+  background-color: #232323;
   font-family: Arial, sans-serif;
+  color: gray;
 }
 
 /* Header Styles */
@@ -16,31 +17,77 @@ header {
   padding: 20px;
   text-align: center;
 }
-
+.realbox{
+  display: flex;
+  flex-direction: column;
+}
+.disimage{
+  width: 50%;
+  height: 50%;
+  border: 2px solid white;
+}.lines{
+  padding-bottom: 30px;
+  width: 100%;
+  height: 1px;
+  border-top: 1px dashed gray;
+}
 h1 {
   font-size: 2rem;
 }
 
-/* About Section Styles */
-.about-section {
+.cont-about{
+  padding: 30px;
+  width: 100%;
   display: flex;
-  justify-content: center;
+  gap: 20px;
   align-items: center;
-  padding: 40px;
-  margin: 20px;
+}
+.content{
+  width: 50%;
+}
+/* .bar{
+  height: 30px;
+  width: 90%;
+  transform: rotate(90deg);
+  position: relative;
+  bottom: 60px;
+
+}.bars{
+  display: flex;
+  align-items: center;
+} */
+.bar-1{
+  background-color: #97B256;
+}
+.bar-2{
+  background-color: #73B5CB;
+}
+.bar-3{
+  background-color: #D98C3E;
+}
+.bar-4{
+  background-color: #AF4752;
+}
+.realbox{
+  position: relative;
+}
+.bars{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+
+}
+.bar{
+  height: 43vh;
+  width: 30px;
+}
+.bar-wrapper{
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-.about-content {
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-img {
-  max-width: 100%;
-  border-radius: 50%;
-}
 
 p {
   font-size: 1.2rem;
