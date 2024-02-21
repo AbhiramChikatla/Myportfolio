@@ -393,18 +393,21 @@
           <p>How can you communicate ?</p>
           <h1>Contact Me</h1>
         </div>
+        <form id="send_form"> 
         <div class="input-field">
           <div class="name-email">
-            <input type="text" placeholder="Your Name">
-            <input type="email" placeholder="Enter Email">
+            <input type="text" placeholder="Your Name" id="Name">
+            <input type="email" placeholder="Enter Email" id="Email">
           </div>
           <div class="input-box">
-            <textarea name="query" id="" rows="10" placeholder="Write Something"></textarea>
+            <textarea id="Query" id="" rows="10" placeholder="Write Something"></textarea>
           </div>
           <div class="send-btn">
-            <button>Send Message</button>
+            <!-- <button id="btn">Send Message</button> -->
+            <input type="submit">
           </div>
         </div>
+        ></form>
       </div>
     </section>
         </main>
@@ -430,6 +433,7 @@
       </div>
   </footer>
 </body>
+<script src="script.js"></script>
   <!-- Load library from the CDN -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 

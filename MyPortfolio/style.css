@@ -291,7 +291,7 @@ footer {
   text-align: center;
   margin: 20px 0;
 }
-.send-btn button{
+.send-btn input{
   padding: 20px;
   background-color: white;
   color: gray;
@@ -301,7 +301,7 @@ footer {
   border-radius: 10px;
   cursor: pointer;
 }
-.send-btn button:hover{
+.send-btn input:hover{
     background-color: #050580;
     color: white;
  
