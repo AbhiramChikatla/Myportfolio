@@ -11,8 +11,8 @@ const port = 4000;
 //     port: 465, // true for 465, false for other ports
 //     host: "smtp.gmail.com",
 //     auth: {
-//         user: "abhiramchikatla03@gmail.com",
-//         pass: "Abhi#123$",
+//         user: "xxxxxx",
+//         pass: "xxxxxxx",
 //     },
 //     secure: true,
 // });
