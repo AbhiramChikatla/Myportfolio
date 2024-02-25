@@ -1,4 +1,3 @@
- console.log("hello world")
  let send_btn=send_form.addEventListener("submit",(e)=>{
     e.preventDefault();
     let username=document.getElementById("Name")
