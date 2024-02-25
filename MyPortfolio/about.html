@@ -1,101 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>About Me - Abhiram</title>
+        <link rel="stylesheet" href="about.css" />
+    </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>About Me - Abhiram</title>
-  <link rel="stylesheet" href="about.css" />
-</head>
-
-<body>
-  <header>
-    <h1>About Me</h1>
-  </header>
-  <main>
-    <div class="cont-about">
-      <div class="content">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid consequuntur delectus non eaque incidunt ipsam
-        esse? Officiis atque iure, placeat fugiat repellat facilis deleniti est sed adipisci ab libero eveniet hic,
-        omnis magnam assumenda quas. Nostrum quo harum sint officiis nesciunt non quis doloribus esse.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laboriosam sit voluptates omnis labore modi voluptate
-        id ex optio, dicta molestiae itaque illo vitae rem ducimus reiciendis eligendi, consectetur, dolorum eveniet.
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque adipisci corrupti magnam praesentium. Itaque
-        quibusdam harum, dignissimos veniam inventore ipsum aliquam nam, voluptas quos aliquid ipsam eos, cupiditate
-        temporibus sed.
-        Quaerat repellat dolorum sed cum fugit dicta eius voluptas minima, nesciunt necessitatibus! Id modi ratione ex
-        illum quae sunt temporibus dolores porro officia quibusdam fugit exercitationem corporis, quam neque sequi.
-      </div>
-      <div class="disimage">
-        <div class="realbox">
-
-          <div class="lines"></div>
-          <div class="lines"></div>
-          <div class="lines"></div>
-          <div class="lines"></div>
-          <div class="lines"></div>
-          <div class="lines"></div>
-          <div class="lines"></div>
-          <div class="lines"></div>
-          <div class="lines"></div>
-          <!-- <div class="bar"></div> -->
-          <div class="bars">
-            <div class="bar-wrapper">
-              <div class="bar bar-1">
-              </div>
-              <div class="bar-content">
-                HTML,CSS,JS
-              </div>
+    <body>
+        <header>
+            <h1>About Me</h1>
+        </header>
+        <main>
+            <div class="cont-about">
+                <div class="content">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Aliquid consequuntur delectus non eaque incidunt ipsam esse?
+                    Officiis atque iure, placeat fugiat repellat facilis
+                    deleniti est sed adipisci ab libero eveniet hic, omnis
+                    magnam assumenda quas. Nostrum quo harum sint officiis
+                    nesciunt non quis doloribus esse. Lorem ipsum dolor sit amet
+                    consectetur, adipisicing elit. Laboriosam sit voluptates
+                    omnis labore modi voluptate id ex optio, dicta molestiae
+                    itaque illo vitae rem ducimus reiciendis eligendi,
+                    consectetur, dolorum eveniet. Lorem ipsum dolor, sit amet
+                    consectetur adipisicing elit. Atque adipisci corrupti magnam
+                    praesentium. Itaque quibusdam harum, dignissimos veniam
+                    inventore ipsum aliquam nam, voluptas quos aliquid ipsam
+                    eos, cupiditate temporibus sed. Quaerat repellat dolorum sed
+                    cum fugit dicta eius voluptas minima, nesciunt
+                    necessitatibus! Id modi ratione ex illum quae sunt
+                    temporibus dolores porro officia quibusdam fugit
+                    exercitationem corporis, quam neque sequi.
+                </div>
+                <div id="columnchart_values"></div>
             </div>
-            <div class="bar-wrapper">
-              <div class="bar bar-2">
-              </div>
-              <div class="bar-content">
-                TailwindCss,EJS
-              </div>
+        </main>
+        <footer>
+            <div class="footer-nav" style="padding-bottom: 10">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="index.html#projectsection">Projects</a></li>
+                    <li><a href="index.html#contact-me">Contact Me</a></li>
+                </ul>
             </div>
-            <div class="bar-wrapper">
-              <div class="bar bar-3">
-              </div>
-              <div class="bar-content">
-               React.js,Node.js
-              </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/abhiram.chikatla"
+                    ><img src="images\face1.png" alt="Facebook"
+                /></a>
+                <a href="https://twitter.com/ChikatlaAbhiram"
+                    ><img src="images\twitter.png" alt="Twitter"
+                /></a>
+                <a href="http://www.youtube.com"
+                    ><img src="images\youtube.png" alt="YouTube"
+                /></a>
+                <a href="https://www.instagram.com/chikatla_abhiram/"
+                    ><img src="images\insta.png" alt="Instagram"
+                /></a>
             </div>
-            <div class="bar-wrapper">
-              <div class="bar bar-4">
-              </div>
-              <div class="bar-content">
-                Mongodb
-              </div>
+            <div class="siteurl">
+                www.abhiramdevportfolio.com
+
+                <p class="copy">&copy; 2023 Abhiram. All rights reserved.</p>
             </div>
-          </div>
+        </footer>
+        <script
+            type="text/javascript"
+            src="https://www.gstatic.com/charts/loader.js"
+        ></script>
+        <script type="text/javascript">
+            google.charts.load("current", { packages: ["corechart"] });
+            google.charts.setOnLoadCallback(drawChart);
+            function drawChart() {
+                var data = google.visualization.arrayToDataTable([
+                    ["Element", "Grip", { role: "style" }],
+                    ["HTML,CSS,JS", 60, "#97B256"],
+                    ["TailwindCss,EJS", 45, "#73B5CB"],
+                    ["React.js,Node.js", 55, "#D98C3E"],
+                    ["Mongodb", 40, "color: #AF4752"],
+                    ["Python", 89, "color: #758BFD"],
+                    ["Java", 47, "color: 4ecdc4"],
+                ]);
 
-        </div>
+                var view = new google.visualization.DataView(data);
+                view.setColumns([
+                    0,
+                    1,
+                    {
+                        calc: "stringify",
+                        sourceColumn: 1,
+                        type: "string",
+                        role: "annotation",
+                    },
+                    2,
+                ]);
 
-      </div>
-    </div>
-  </main>
-  <footer>
-    <div class="footer-nav" style="padding-bottom: 10;">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="#projectsection">Projects</a></li>
-        <li><a href="contactpage.html">Contact Us</a></li>
-      </ul>
-    </div>
-    <div class="social-icons">
-      <a href="https://www.facebook.com/abhiram.chikatla"><img src="images\face1.png" alt="Facebook"></a>
-      <a href="https://twitter.com/ChikatlaAbhiram"><img src="images\twitter.png" alt="Twitter"></a>
-      <a href="http://www.youtube.com"><img src="images\youtube.png" alt="YouTube"></a>
-      <a href="https://www.instagram.com/chikatla_abhiram/"><img src="images\insta.png" alt="Instagram"></a>
+                var options = {
+                    title: "My Skills",
+                    width: 600,
+                    height: 400,
+                    backgroundColor: "#232323",
+                    colors: ["white"],
 
-    </div>
-    <div class="siteurl">www.abhiramdevportfolio.com
-
-      <p class="copy">&copy; 2023 Abhiram. All rights reserved.</p>
-    </div>
-  </footer>
-</body>
-
+                    bar: { groupWidth: "95%" },
+                    legend: { position: "none" },
+                    titleTextStyle: { color: "white" },
+                    hAxis: { textStyle: { color: "white" } },
+                    vAxis: { textStyle: { color: "white" } },
+                };
+                var chart = new google.visualization.ColumnChart(
+                    document.getElementById("columnchart_values")
+                );
+                chart.draw(view, options);
+            }
+        </script>
+    </body>
 </html>

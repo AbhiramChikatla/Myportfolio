@@ -41,10 +41,13 @@ h1 {
   display: flex;
   gap: 20px;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
 }
 .content{
   width: 50%;
 }
+
 /* .bar{
   height: 30px;
   width: 90%;
@@ -100,7 +103,7 @@ footer {
   flex-direction: column;
   align-items: center;
   position: relative;
-  top: 125px;
+  top: 165px;
 }
 .footer-nav {
   font-size: 20px;
@@ -116,7 +119,7 @@ footer {
 }
 .footer-nav ul li a {
   text-decoration: none;
-  color: black;
+  color: white;
 }
 
 /* Style for footer navigation links on hover */
@@ -138,14 +141,24 @@ footer {
   width: 24px;
   height: 24px;
   vertical-align: middle;
-  filter: invert(1);
+  /* filter: invert(1); */
 }
 .copy {
-  color: black;
+  color: white;
   font-size: 18px;
 }
 .siteurl {
   font-size: 20px;
   text-align: center;
   padding: 10px 0 ;
+  color: white;
+}
+@media only screen and (max-width: 600px) {
+  body,html {
+    text-align: center;
+    overflow-x: hidden;
+
+  }.content{
+    min-width: 400px;
+  }
 }
