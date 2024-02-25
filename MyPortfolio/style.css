@@ -35,6 +35,11 @@ nav ul li {
     margin-top: 3%;
     flex-wrap: wrap;
 }
+.box-content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
 .sectionLeft {
     width: 33%;
     font-size: 3rem;
@@ -87,6 +92,7 @@ main h2 {
     width: 80vw;
     margin: 56px 0px;
     height: 2px;
+    
     display: flex;
     margin-bottom: 350px;
     background-color: rgba(128, 128, 128, 0.5);
@@ -100,11 +106,15 @@ main h2 {
     margin: 0px 7vw;
     background-color: gray;
 }
-.secondsection .skills {
+.secondsection .skill {
     display: flex;
-    flex-direction: column;
-    gap: 30px;
+    align-items: center;
 }
+
+
+ 
+
+
 .top_image {
     width: 30px;
     position: relative;
@@ -134,6 +144,7 @@ main h2 {
 .projects-section {
     margin: 20px;
     text-align: center;
+    margin-top: 200px;
 }
 
 h2 {
@@ -162,32 +173,7 @@ h2 {
 
 
 
-.skillsview{
-    display: none;
-    flex-wrap: wrap;
-    gap: 50px;
-    align-items: center;
-    justify-content: center;
 
-}
-.skill{
-    width: 30vw;
-    border: 2px solid;
-    padding: 10px;
-}
-.skillinfo{
-    display: flex;
-    gap: 2px;
-    align-items: start;
-}
-.skillinfo h3{
-    font-size: 20px;
-    font-weight: 300;
-}
-.skillinfo p{
-    font-size: 10px;
-    color: gray;
-}
 .range{
     display: flex;
     justify-content: center;
@@ -241,6 +227,7 @@ p {
 .thumbnail {
     width: 100px;
     height: 100px;
+    margin: auto;
 }
 .myprojects {
     text-align: left;
@@ -378,6 +365,9 @@ footer{
     padding: 12px 0px;
 }
 @media screen and (max-width: 1200px) {
+    body,html{
+        overflow-x: hidden;
+    }
     body {
         min-width: fit-content;
     }
@@ -386,7 +376,7 @@ footer{
     }
     .secondsection .box {
         flex-direction: column;
-        width: 50vw;
+        width: max(30vw,225px);
     }
     .vertical-title,
     .vertical-desc {
@@ -404,11 +394,14 @@ footer{
     .secondsection .vertical {
         height: unset;
     }
-
+    .box-content{
+        flex-direction: row;
+    }
     nav {
         flex-direction: column;
     }
     .sectionLeft {
+        text-align: center;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -419,7 +412,7 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 325vh;
+        height: 150vh;
     }
     .sectionRight {
         display: flex;
@@ -434,7 +427,5 @@ footer{
     }.skillsview{
         display: flex;
     }
-    .secondsection .box {
-        display: none;
-    }
+   
 }
