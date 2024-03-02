@@ -7,6 +7,7 @@ app.use(cors());
 app.use(bodyParser.json());
 const port = 4000;
 
+<<<<<<< HEAD
 const transporter = nodemailer.createTransport({
     port: 465, // true for 465, false for other ports
     host: "smtp.gmail.com",
@@ -16,6 +17,17 @@ const transporter = nodemailer.createTransport({
     },
     secure: true,
 });
+=======
+// const transporter = nodemailer.createTransport({
+//     port: 465, // true for 465, false for other ports
+//     host: "smtp.gmail.com",
+//     auth: {
+//         user: "xxxxxx",
+//         pass: "xxxxxxx",
+//     },
+//     secure: true,
+// });
+>>>>>>> f30ba71bd626762c1e3d678e8c0ddd67b7c62cd5
 
 app.get("/", (req, res) => {
     res.send("Hello World!");
