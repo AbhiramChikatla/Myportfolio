@@ -1,7 +1,6 @@
 * {
     padding: 0;
     margin: 0;
-    scroll-behavior: auto !important;
 }
 :root {
     --primary: #695aa6;
@@ -27,6 +26,9 @@ nav ul li {
 }
 .left {
     font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .firstSection {
     display: flex;
@@ -35,7 +37,7 @@ nav ul li {
     margin-top: 3%;
     flex-wrap: wrap;
 }
-.box-content{
+.box-content {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -58,6 +60,30 @@ nav ul li {
 }
 .purple {
     color: rgb(189, 189, 246);
+}
+
+@keyframes example {
+    0% {
+        transform: rotate(0deg);
+    }
+    /* 25% {
+        transform: rotate(180deg);
+    }
+    50% {
+        transform: rotate(270deg);
+    } */
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.animation {
+    animation-name: example;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    filter: invert(1);
+    height: 25px;
 }
 nav ul a {
     text-decoration: none;
@@ -92,7 +118,7 @@ main h2 {
     width: 80vw;
     margin: 56px 0px;
     height: 2px;
-    
+
     display: flex;
     margin-bottom: 350px;
     background-color: rgba(128, 128, 128, 0.5);
@@ -110,10 +136,6 @@ main h2 {
     display: flex;
     align-items: center;
 }
-
-
- 
-
 
 .top_image {
     width: 30px;
@@ -170,21 +192,17 @@ h2 {
 
 /* Rest of the styles (img, h3, p, and project-link) remain the same */
 
-
-
-
-
-.range{
+.range {
     display: flex;
     justify-content: center;
 }
-.white{
+.white {
     width: 25vw;
     height: 20px;
     border: 2px solid black;
-    margin: 10px 30px
+    margin: 10px 30px;
 }
-.fill{
+.fill {
     background-color: green;
     width: 20vw;
     height: 20px;
@@ -276,41 +294,40 @@ footer {
     width: 54%;
     padding: 6px;
 }
-.send-btn{
-  text-align: center;
-  margin: 20px 0;
+.send-btn {
+    text-align: center;
+    margin: 20px 0;
 }
-.send-btn input{
-  padding: 20px;
-  background-color: white;
-  color: gray;
-  font-size: 16px;
-  outline: gray;
-  border: 1px solid rgba(128, 128, 128, 0.9);
-  border-radius: 10px;
-  cursor: pointer;
+.send-btn input {
+    padding: 20px;
+    background-color: white;
+    color: gray;
+    font-size: 16px;
+    outline: gray;
+    border: 1px solid rgba(128, 128, 128, 0.9);
+    border-radius: 10px;
+    cursor: pointer;
 }
-.send-btn input:hover{
+.send-btn input:hover {
     background-color: #050580;
     color: white;
- 
 }
-#contact-me{
+#contact-me {
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
-.query-map{
+.query-map {
     display: flex;
     justify-content: center;
 }
-.query-map iframe{
+.query-map iframe {
     width: 80%;
     height: 400px;
 }
 /* Style for footer navigation links */
-footer{
-  margin: 30px 0;
+footer {
+    margin: 30px 0;
 }
 .footer-nav ul {
     list-style-type: none;
@@ -365,7 +382,8 @@ footer{
     padding: 12px 0px;
 }
 @media screen and (max-width: 1200px) {
-    body,html{
+    body,
+    html {
         overflow-x: hidden;
     }
     body {
@@ -376,7 +394,7 @@ footer{
     }
     .secondsection .box {
         flex-direction: column;
-        width: max(30vw,225px);
+        width: max(30vw, 225px);
     }
     .vertical-title,
     .vertical-desc {
@@ -394,7 +412,7 @@ footer{
     .secondsection .vertical {
         height: unset;
     }
-    .box-content{
+    .box-content {
         flex-direction: row;
     }
     nav {
@@ -407,6 +425,7 @@ footer{
         justify-content: center;
         width: 100%;
         align-items: center;
+        font-size:35px;
     }
     .secondsection {
         display: flex;
@@ -419,13 +438,13 @@ footer{
         justify-content: center;
     }
     .sectionRight img {
-        width: 45vw;
+        width: 225px;
         margin-bottom: 30px;
     }
     .top_image {
         top: 110px;
-    }.skillsview{
+    }
+    .skillsview {
         display: flex;
     }
-   
 }

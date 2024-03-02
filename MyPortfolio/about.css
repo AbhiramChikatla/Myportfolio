@@ -159,6 +159,11 @@ footer {
     overflow-x: hidden;
 
   }.content{
-    min-width: 400px;
+    min-width: 350px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  #columnchart_values{
+    scale: 0.8;
   }
 }
